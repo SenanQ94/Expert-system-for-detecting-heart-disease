@@ -1,0 +1,46 @@
+
+H( S ) = 0.99
+
+Information Gain
+
+age = 0.023
+chest_pain_type = 0.296
+rest_blood_pressure = 0.009
+blood_sugar = 0.015
+rest_electro = 0.012
+max_heart_rate = 0.083
+exercice_angina = 0.252
+
+Root == chest_pain_type
+
+chest_pain_type
+ asympt:
+   exercice_angina
+      yes:
+        rest_electro
+           normal:
+             negative
+           left_vent_hyper:
+             negative
+           st_t_wave_abnormality:
+             positive
+      no:
+        negative
+ atyp_angina:
+   max_heart_rate
+      <138:
+        positive
+      >=138:
+        negative
+ non_anginal:
+   age
+      <48:
+        negative
+      >=48:
+        positive
+ typ_angina:
+   blood_sugar
+      FALSE:
+        negative
+      TRUE:
+        positive

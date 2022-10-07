@@ -1,0 +1,12 @@
+select disease 
+	from HeartMMM 
+natural prediction join 
+(select '" +
+	 intAge + @"' as [Age], '" +
+	 DropDownList5.SelectedValue + @"' as [Chest Pain Type], '" +
+	 intBloodPressure + @"' as [Rest Blood Pressure], '" +
+	 DropDownList6.SelectedValue + @"' as [Blood Sugar], '" +
+	 DropDownList7.SelectedValue + @"' as [Rest Electro], '" +
+	 intHeartRate + @"' as [Max Heart Rate], '" +
+	 DropDownList8.SelectedValue + @"' as [Exercice Angina]
+	) as t
