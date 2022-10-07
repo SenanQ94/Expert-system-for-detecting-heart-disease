@@ -4,9 +4,10 @@
 
 Technologies: 
 - C#.
-- Java
-- SQL Server
-- SQL Server Analysis Services
+- Java.
+- ASP.NET.
+- SQL Server.
+- SQL Server Analysis Services.
 
 Algorithms:
 - Bayes.
